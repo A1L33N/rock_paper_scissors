@@ -19,7 +19,7 @@ class String
 
     elsif self == "paper" && other == "scissors"
       false
-      
+
     else
       nil
     end
