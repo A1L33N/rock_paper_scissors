@@ -13,4 +13,8 @@ describe("String#beats") do
   it ("returns 'tie' if rock is the object and rock is the argument") do
     expect("rock".beats("rock")).to(eq("tie"))
   end
+
+  it ("returns false if scissors is the object and rock is the argument") do
+    expect("scissors".beats("rock")).to(eq(false))
+  end
 end

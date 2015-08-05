@@ -1,12 +1,16 @@
 class String
   define_method(:beats) do |other|
-    if self == "rock" && other == "scissors"
+    if self == other
+       "tie"
+    elsif self == "rock" && other == "scissors"
       true
+
     elsif self == "rock" && other == "paper"
       false
 
-    elsif self == other
-       "tie"
+    elsif self == "scissors" && other == "rock"
+      false
+
     else
       nil
     end
