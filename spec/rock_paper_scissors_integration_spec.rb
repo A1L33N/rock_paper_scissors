@@ -8,6 +8,6 @@ describe('the rock_paper_scissors path', {:type => :feature}) do
     fill_in('Player1', :with => 'rock')
     fill_in('Player2', :with => 'scissors')
     click_button('Shoot!')
-    expect(page).to have_content('true')
+    expect(page).to have_content("Player One Wins!")
   end
 end
