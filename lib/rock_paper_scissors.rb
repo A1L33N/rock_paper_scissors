@@ -11,6 +11,9 @@ class String
     elsif self == "scissors" && other == "rock"
       false
 
+    elsif self == "scissors" && other == "paper"
+      true
+
     else
       nil
     end
