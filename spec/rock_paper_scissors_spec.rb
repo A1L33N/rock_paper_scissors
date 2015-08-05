@@ -22,8 +22,12 @@ describe("String#beats") do
     expect("scissors".beats("paper")).to(eq(true))
   end
 
-  it ("returns true if paper is the object and rockis the argument") do
+  it ("returns true if paper is the object and rock is the argument") do
     expect("paper".beats("rock")).to(eq(true))
+  end
+
+  it ("returns false if paper is the object and scissors is the argument") do
+    expect("paper".beats("scissors")).to(eq(false))
   end
 
 end
